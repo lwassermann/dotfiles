@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+describe "${1:something}" do
+  test "${2:does something}", _context do
+    ${3: # assert 1 == 2}
+  end
+end
+]]></content>
+  <tabTrigger>describe</tabTrigger>
+  <scope>source.elixir</scope>
+</snippet>

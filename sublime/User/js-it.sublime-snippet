@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[it('${1:does something}', () => {${2}})]]></content>
+	<tabTrigger>it</tabTrigger>
+  <scope>source.js, source.ts, source.tsx</scope>
+</snippet>

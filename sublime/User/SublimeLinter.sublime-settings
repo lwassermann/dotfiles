@@ -1,0 +1,57 @@
+{
+  "debug": false,
+  "delay": 0.5,
+  // background: asynchronously on every change
+  // load_save: when a file is opened and every time it's saved
+  // manual: only when calling the Lint This View command
+  // save: only when a file is saved
+  "lint_mode": "background",
+  "linters": {
+    "elixirlinter": {
+      "disable": false,
+      "args": [],
+      "excludes": []
+    },
+    "eslint": {
+      "disable": false,
+      "args": ["-c", ".sublime-eslintrc"],
+      "excludes": [],
+      "selector": "source.js, source.ts, source.tsx, source.jsx"
+    },
+    "rubocop": {
+      "disable": true,
+      "args": [],
+      "excludes": []
+    }
+  },
+  "show_marks_in_minimap": true,
+  "styles": [
+    {
+      "mark_style": "squiggly_underline",
+      "priority": 1,
+      "scope":
+        "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
+      "icon": "dot",
+      "types": ["warning"]
+    },
+    {
+      "mark_style": "squiggly_underline",
+      "priority": 1,
+      "scope":
+        "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
+      "icon": "dot",
+      "types": ["error"]
+    }
+  ],
+  "syntax_map": {
+    "ecmascript": "javascript",
+    "html (django)": "html",
+    "html (rails)": "html",
+    "html 5": "html",
+    "javascript (babel)": "javascript",
+    "magicpython": "python",
+    "php": "html",
+    "python django": "python",
+    "pythonimproved": "python"
+  }
+}

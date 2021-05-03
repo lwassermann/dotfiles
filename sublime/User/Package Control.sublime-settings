@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Package Control"
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"DashDoc",
+		"DocBlockr",
+		"Ecmascript Syntax",
+		"EditorConfig",
+		"Elixir",
+		"Elm Syntax Highlighting",
+		"JsPrettier",
+		"Package Control",
+		"PHP-Twig",
+		"SCSS",
+		"Solarized Color Scheme",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-stylelint",
+		"TypeScript Syntax"
+	]
+}

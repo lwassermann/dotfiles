@@ -1,0 +1,38 @@
+{
+  // ----------------------------------------------------------------------
+  // Auto Format on Save
+  // ----------------------------------------------------------------------
+  //
+  // @param {bool} "auto_format_on_save"
+  // @default false
+  //
+  // Whether or not to automatically format the file on save.
+  // ----------------------------------------------------------------------
+
+  "auto_format_on_save": true,
+  // ----------------------------------------------------------------------
+  // Custom File Extensions
+  // ----------------------------------------------------------------------
+  //
+  // @param {array} "custom_file_extensions"
+  // @default []
+  //
+  // Additional custom file extensions to format.
+  //
+  // There's built-in support already for "js", "jsx", "json", "graphql/gql",
+  // "ts", "tsx", "css", "scss", "less", "md" and "vue" files. Additional file
+  // extensions MUST be specified here, without the leading dot.
+  // ----------------------------------------------------------------------
+
+  "custom_file_extensions": [],
+  "prettier_options": {
+    // Fit code within this line limit
+    "printWidth": 80,
+
+    // Whether to add a semicolon at the end of every line (semi: true), or
+    // only at the beginning of lines that may introduce
+    // ASI failures (semi: false)
+    // "semi": false,
+    "singleQuote": true,
+  }
+}

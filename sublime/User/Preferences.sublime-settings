@@ -1,0 +1,42 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Solarized (light) (SL).tmTheme",
+	"detect_indentation": true,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"_build",
+		"deps",
+		"node_modules",
+		"npm-packages-offline-cache",
+		"bower_components",
+		"dist",
+		"coverage",
+		"tmp",
+		"__pychache__",
+		".mypy_cache"
+	],
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage"
+	],
+	"indent_to_bracket": false,
+	"mini_diff": false,
+	"remember_full_screen": true,
+	"rulers":
+	[
+		80,
+		98
+	],
+	"show_git_status": false,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"'-,.;<>~!#%^&*|+=[]{}`~:?",
+	"word_wrap": true
+}

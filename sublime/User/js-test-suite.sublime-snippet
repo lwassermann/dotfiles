@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+import React from 'react';
+import { shallow } from 'enzyme';
+
+import ${1:systemUnderTest} from './${1:systemUnderTest}'
+
+describe('${1:systemUnderTest}', () => {
+  function subject(overrideProps) {
+    const defaultProps = {${2}}
+    const props = {...defaultProps, ...overrideProps}
+    return shallow(<${1:systemUnderTest} {...props} />)
+  }
+
+  it('${3:does something}', () => {${4}})
+})
+
+]]></content>
+  <tabTrigger>test suite</tabTrigger>
+  <scope>source.js, source.ts, source.tsx</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[describe('${1:}', () => {
+  it('${2:does something}', () => {
+		${3:/* expect('a').toEqual('b') */}
+	})
+})]]></content>
+    <tabTrigger>describe</tabTrigger>
+    <scope>source.js, source.ts, source.tsx</scope>
+</snippet>
