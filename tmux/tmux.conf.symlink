@@ -12,22 +12,15 @@ set-option -g display-time 3000
 
 # Change prefix
 unbind-key C-b
-set-option -g prefix C-a
-bind-key C-a send-prefix
-
-# Emacs key bindings in command prompt
-set-option -g status-keys emacs
-
-# Use vim key bindings in copy mode
-set-option -w -g mode-keys vi
+set-option -g prefix C-s
+bind-key C-s send-prefix
 
 # Enable focus events
 set-option -g focus-events on
 
-# Setup vim-like selection and yanking
+# Setup vim-like selection
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi V send-keys -X select-line
-bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'pbcopy'
 
 # Update default binding of Enter to also use copy-pipe
 unbind-key -T copy-mode-vi Enter
@@ -38,6 +31,10 @@ bind-key h select-pane -L
 bind-key j select-pane -D
 bind-key k select-pane -U
 bind-key l select-pane -R
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
 
 # Alternate bindings for pane-splitting
 bind-key \\ split-window -h -c '#{pane_current_path}'
@@ -80,16 +77,13 @@ set-option -g status-left-length 32
 # Show prefix activation and copy mode in right status bar
 set-option -g status-right '#{?client_prefix,#[bg=#cccccc] ^a #[default],#{?pane_in_mode,#[bg=yellow] copy #[default],}}'
 
-# Customize status bar colors
-set-option -g status-style 'bg=#222222,fg=#666666'
-set-option -g window-status-current-style 'fg=#aaaaaa'
-
-# Customize border colors
-set-option -g pane-border-style 'fg=#222222'
-set-option -g pane-active-border-style 'fg=#aaaaaa'
-
 # Conditionally load local config
 if-shell '[ -f ~/.tmux.conf.local ]' 'source ~/.tmux.conf.local'
+
+# Enable mouse control (clickable windows, panes, resizable panes)
+set -g mouse-select-window on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
 
 # Reload tmux config
 bind-key R run-shell 'tmux source-file ~/.tmux.conf > /dev/null; tmux display-message "Sourced config"'
