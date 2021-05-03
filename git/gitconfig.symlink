@@ -8,12 +8,26 @@
 [core]
         excludesFile = ~/.gitignore
 [alias]
-        s       = status
-        b       = branch
+        st      = status
+        br      = branch
         co      = checkout
         flame   = blame
         promote = !$ZSH/bin/git-promote
         count   = !git shortlog -sn
+        pp      = pull --prune
+        hist    = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+        clean-branches = "! \
+                        git branch --merged master --no-color | \
+                        egrep -v '^[ *]*(master|production|staging)$' > /tmp/merged-branches && \
+                        vim /tmp/merged-branches && \
+                        xargs git branch -d < /tmp/merged-branches \
+                        "
+        clean-all-branches = "! \
+                        git branch --no-color > /tmp/merged-branches && \
+                        vim /tmp/merged-branches && \
+                        xargs git branch -D < /tmp/merged-branches \
+                        "
 [color]
         diff = auto
         status = auto
@@ -24,3 +38,5 @@
         ff = only
 [push]
         default = simple
+[pager]
+	branch = false

@@ -4,7 +4,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -32,5 +33,16 @@ Session.vim
 .netrwhist
 *~
 
-# Projections: https://github.com/tpope/vim-projectionist
-.projections.json
+# Some files created by the VS Code elixir toolchain
+.elixir_ls
+
+# Some files created by & for sublime
+*.sublime-workspace
+*.sublime-project
+*.sublime-eslintrc
+
+# Helper file for asdf in projects that don't yet use it
+.tool-versions
+
+# Prettier configuration for files where that is nested and hidden from the editor configuration
+.prettierrc.json

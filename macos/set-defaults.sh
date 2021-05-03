@@ -11,14 +11,17 @@
 
 ## User interface
 
-# Use dark mode.
-defaults write -g AppleInterfaceStyle -string "Dark"
+# Use light mode.
+defaults write -g AppleInterfaceStyle -string "Light"
+# Possible values: "Dark", "Light"
 
 # Set Finder sidebar icon size to small.
 defaults write -g NSTableViewDefaultSizeMode -int 1
+# Possible values: small (1), medium (2), …?
 
 # Show scrollbars when scrolling.
-defaults write -g AppleShowScrollBars -string "WhenScrolling"
+defaults write -g AppleShowScrollBars -string "Always"
+# Possible values: `WhenScrolling`, `Automatic` and `Always`
 
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs).
 defaults write -g AppleKeyboardUIMode -int 3
@@ -27,8 +30,8 @@ defaults write -g AppleKeyboardUIMode -int 3
 ## Language & Region
 
 # Set language and text formats.
-defaults write -g AppleLanguages -array "en-US"
-defaults write -g AppleLocale -string "en_US@currency=EUR"
+defaults write -g AppleLanguages -array "en-GB"
+defaults write -g AppleLocale -string "en_GB@currency=EUR"
 defaults write -g AppleMeasurementUnits -string "Centimeters"
 defaults write -g AppleTemperatureUnit -string "Celsius"
 defaults write -g AppleMetricUnits -bool true

@@ -24,7 +24,7 @@ To get started, run:
 
 ```sh
 # Clone this repository
-git clone https://github.com/pmeinhardt/dotfiles.git ~/.dotfiles
+git clone https://github.com/lwassermann/dotfiles.git ~/.dotfiles
 
 # Change into the new directory
 cd ~/.dotfiles
@@ -42,10 +42,9 @@ If you would like to install [Homebrew](https://github.com/Homebrew/brew) to an 
 
 ## Thanks
 
-This project is adapted from [Zach Holman](https://github.com/holman)’s neat [dotfiles](https://github.com/holman/dotfiles).
+This project is adapted from [Zach Holman](https://github.com/holman)’s neat [dotfiles](https://github.com/holman/dotfiles) via [Paul Meinhardts dotfiles](https://github.com/pmeinhardt/dotfiles).
 
-Trimming down on parts and pulling in pieces from:
-
+<!-- Trimming down on parts and pulling in pieces from:
 - [Carlos Alexandro Becker](https://github.com/caarlos0/dotfiles)
 - [Gary Bernhardt](https://github.com/garybernhardt/dotfiles)
 - [Gianni Chiappetta](https://github.com/gf3/dotfiles)
@@ -53,7 +52,6 @@ Trimming down on parts and pulling in pieces from:
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
 - [Nick Nisi](https://github.com/nicknisi/dotfiles)
 - [Tim Pope](https://github.com/tpope/tpope)
-- and many more.
+- and many more. -->
 
-Special thanks to [Tim Pope](https://github.com/tpope/) for his excellent Vim plugins.
-Thanks to [Chris Kempson](https://github.com/chriskempson) for his [base16 color scheme concept](https://github.com/chriskempson/base16).
+Special thanks to [Paul Meinhardt](https://github.com/pmeinhardt) for providing a good example of how to do this and my starting point.
