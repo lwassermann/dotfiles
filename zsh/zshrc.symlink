@@ -47,3 +47,5 @@ unset config_files
 # zprof
 
 export BAT_THEME="Solarized (light)"
+
+. /usr/local/opt/asdf/asdf.sh
