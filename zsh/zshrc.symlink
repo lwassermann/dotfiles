@@ -45,3 +45,5 @@ unset config_files
 
 # print profiling information
 # zprof
+
+export BAT_THEME="Solarized (light)"
