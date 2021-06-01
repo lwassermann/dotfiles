@@ -7,12 +7,17 @@ link_configuration () {
 
   mkdir -p "$target"
 
-  ln -sf "./settings.json" "$target"
-  ln -sf "./snippets" "$target"
+  ln -sf "$(realpath ./settings.json)" "$target"
+
+  if [ -f "$target/snippets" ]
+  then
+    rm -r "$target/snippets"
+  fi
+  ln -sf "$(realpath ./snippets)" "$target"
 
   if [ -f "./keybindings.json" ]
   then
-    ln -sf "./keybindings.json" "$target"
+    ln -sf "$(realpath ./keybindings.json)" "$target"
   fi
 }
 
@@ -33,5 +38,7 @@ install_extensions () {
   done <"./extensions.txt"
 }
 
+cd vscode
+
 link_configuration
-install_extensions "$@"
+install_extensions "code"
