@@ -35,13 +35,13 @@
   },
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "explorer.confirmDelete": false,
   "files.exclude": {
     "**/node_modules": true
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "explorer.confirmDragAndDrop": false,
   "eslint.packageManager": "yarn",
@@ -97,5 +97,6 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "diffEditor.ignoreTrimWhitespace": false
 }
