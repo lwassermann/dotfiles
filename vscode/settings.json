@@ -21,16 +21,12 @@
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
   "[json]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[elixir]": {
-    "editor.formatOnSave": true
-  },
-  "[jsonc]": {
     "editor.formatOnSave": true
   },
   "telemetry.enableTelemetry": false,
@@ -39,9 +35,6 @@
   "explorer.confirmDelete": false,
   "files.exclude": {
     "**/node_modules": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "explorer.confirmDragAndDrop": false,
   "eslint.packageManager": "yarn",
@@ -68,15 +61,6 @@
   "scm.countBadge": "off",
   "explorer.decorations.badges": false,
   "debug.node.autoAttach": "on",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
   "files.associations": {
@@ -92,11 +76,11 @@
   "liveshare.authenticationProvider": "GitHub",
   "css.validate": false,
   "scss.validate": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
-  "diffEditor.ignoreTrimWhitespace": false
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "eslint.format.enable": true,
+  "prettier.requireConfig": true,
+  "editor.copyWithSyntaxHighlighting": false
 }
