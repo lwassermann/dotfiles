@@ -1,42 +1,25 @@
 {
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "selection",
-  "editor.snippetSuggestions": "top",
-  "editor.tabSize": 2,
-  "editor.rulers": [
-    80
-  ],
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "dist": true,
-    "coverage": true,
-    "_build": true
-  },
-  "sublimeTextKeymap.promptV3Features": true,
-  "workbench.colorTheme": "Solarized Light+",
+  "[elixir]": { "editor.formatOnSave": true },
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[json]": {
-    "editor.formatOnSave": true,
-  },
-  "[elixir]": {
-    "editor.formatOnSave": true
-  },
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-  "window.zoomLevel": 1,
-  "explorer.confirmDelete": false,
-  "files.exclude": {
-    "**/node_modules": true
-  },
-  "explorer.confirmDragAndDrop": false,
+  "[json]": { "editor.formatOnSave": true },
+  "css.validate": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80],
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
@@ -44,43 +27,42 @@
     "typescript",
     "typescriptreact"
   ],
-  "editor.emptySelectionClipboard": false,
-  "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#ddd8c7"
-  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
   "extensions.autoCheckUpdates": false,
-  "scm.diffDecorationsGutterVisibility": "hover",
+  "files.associations": { "*.svg": "xml" },
+  "files.exclude": { "**/node_modules": true },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
   "git.path": "/usr/local/bin/git",
-  "editor.wordWrap": "on",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.editor.focusRecentEditorAfterClose": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "plantuml.exportFormat": "png",
+  "plantuml.exportOutDir": "",
+  "plantuml.exportSubFolder": false,
+  "prettier.requireConfig": true,
+  "scm.countBadge": "off",
+  "scm.diffDecorationsGutterVisibility": "hover",
+  "scss.validate": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "dist": true,
+    "coverage": true,
+    "_build": true
+  },
   "search.quickOpen.includeHistory": false,
   "search.searchOnTypeDebouncePeriod": 500,
-  "workbench.sideBar.location": "left",
-  "scm.countBadge": "off",
-  "explorer.decorations.badges": false,
-  "debug.node.autoAttach": "on",
-  "emmet.showAbbreviationSuggestions": false,
-  "emmet.showExpandedAbbreviation": "never",
-  "files.associations": {
-    "*.svg": "xml"
-  },
-  "editor.formatOnSave": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
   "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
-  "elixirLS.fetchDeps": false,
-  "plantuml.exportOutDir": "",
-  "plantuml.exportFormat": "png",
-  "plantuml.exportSubFolder": false,
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
-  "liveshare.authenticationProvider": "GitHub",
-  "css.validate": false,
-  "scss.validate": false,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "eslint.format.enable": true,
-  "prettier.requireConfig": true,
-  "editor.copyWithSyntaxHighlighting": false
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": { "editor.selectionBackground": "#ddd8c7" },
+  "workbench.colorTheme": "Solarized Light+",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.editorAssociations": { "*.ipynb": "jupyter.notebook.ipynb" },
+  "workbench.sideBar.location": "left"
 }
