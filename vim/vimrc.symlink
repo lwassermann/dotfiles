@@ -157,7 +157,8 @@ nnoremap <c-p> :GFiles --cached --exclude-standard --others<cr>
 
 """ Colors
 
-colorscheme base
+set background=light
+colorscheme solarized
 
 
 """ Use vim-plug to manage vim bundles:
