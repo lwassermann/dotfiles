@@ -28,6 +28,6 @@
 	},
 	"lambda": {
 		"prefix": "f",
-		"body": "function ($1) {$0}"
-	},
+		"body": "function $2($1) {$0}"
+	}
 }

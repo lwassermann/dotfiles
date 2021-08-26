@@ -28,7 +28,7 @@
   },
   "lambda": {
     "prefix": "f",
-    "body": "function ($1) {$0}"
+    "body": "function $2($1) {$0}"
   },
   "test suite testing library": {
     "prefix": "subject-testing",
@@ -36,9 +36,9 @@
       "import { render } from '@testing-library/react';",
       "import React from 'react';",
       "",
-      "import ${1:systemUnderTest}, { Props } from './${1:systemUnderTest}';",
+      "import { ${1:systemUnderTest}, Props } from '../${1:systemUnderTest}';",
       "",
-      "describe('${1:systemUnderTest}', () => {",
+      "describe('<${1:systemUnderTest}>', () => {",
       "  function subject(overrideProps: Partial<Props>) {",
       "    const defaultProps: Props = {${2}};",
       "    const props = { ...defaultProps, ...overrideProps };",
@@ -60,7 +60,7 @@
       "import { shallow, ShallowWrapper } from 'enzyme';",
       "import React from 'react';",
       "",
-      "import ${1:systemUnderTest}, {Props} from './${1:systemUnderTest}'",
+      "import ${1:systemUnderTest}, { Props } from './${1:systemUnderTest}'",
       "",
       "describe('${1:systemUnderTest}', () => {",
       "  function render(overrideProps?: Partial<Props>): ShallowWrapper {",
