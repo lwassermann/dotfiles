@@ -48,4 +48,4 @@ unset config_files
 
 export BAT_THEME="Solarized (light)"
 
-. /usr/local/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

@@ -1,16 +1,22 @@
 {
-  "[elixir]": { "editor.formatOnSave": true },
   "[javascript]": {
-    "editor.formatOnSave": true,
     "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[json]": { "editor.formatOnSave": true },
+  "[javascriptreact]": {
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+  "[typescriptreact]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
   "css.validate": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.emptySelectionClipboard": false,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "selection",
   "editor.rulers": [80],
@@ -57,6 +63,7 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": { "editor.selectionBackground": "#ddd8c7" },
   "workbench.colorTheme": "Solarized Light+",
