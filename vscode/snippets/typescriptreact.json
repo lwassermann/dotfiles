@@ -34,6 +34,7 @@
     "prefix": "subject-testing",
     "body": [
       "import { render } from '@testing-library/react';",
+      "import userEvent from '@testing-library/user-event';",
       "import React from 'react';",
       "",
       "import { ${1:systemUnderTest}, Props } from '../${1:systemUnderTest}';",
@@ -42,7 +43,10 @@
       "  function subject(overrideProps: Partial<Props>) {",
       "    const defaultProps: Props = {${2}};",
       "    const props = { ...defaultProps, ...overrideProps };",
-      "    return render(<${1:systemUnderTest} {...props} />);",
+      "    return Object.assign(",
+      "      render(<${1:systemUnderTest} {...props} />),"
+      "      { user: userEvent.setup() }"
+      "    );",
       "  }",
       "",
       "  it('${3:does something}', () => {",

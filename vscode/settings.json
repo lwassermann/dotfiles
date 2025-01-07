@@ -1,15 +1,38 @@
 {
   "[javascript]": {
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
   },
   "[javascriptreact]": {
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescript]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
-  "[typescriptreact]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   "css.validate": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
@@ -17,16 +40,18 @@
   "editor.emptySelectionClipboard": false,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "selection",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
   "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -37,39 +62,84 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "extensions.autoCheckUpdates": false,
-  "files.associations": { "*.svg": "xml" },
-  "files.exclude": { "**/node_modules": true },
+  "files.associations": {
+    "*.ili": "plaintext",
+    "*.svg": "xml"
+  },
+  "files.exclude": {
+    "**/node_modules": true
+  },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.closeDiffOnOperation": true,
+  "git.confirmSync": false,
   "git.path": "/usr/local/bin/git",
+  "git.suggestSmartCommit": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "image-diff.viewer.showDiffByDefault": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveshare.anonymousGuestApproval": "reject",
+  "liveshare.guestApprovalRequired": true,
+  "liveshare.increasedGuestLimit": false,
   "plantuml.exportFormat": "png",
   "plantuml.exportOutDir": "",
   "plantuml.exportSubFolder": false,
+  "prettier.configPath": ".prettierrc",
   "prettier.requireConfig": true,
+  "projectManager.git.maxDepthRecursion": 2,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "codeLens": true,
+    "completion": true,
+    "definition": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "workspaceSymbol": true
+  },
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "asdf"
+  },
   "scm.countBadge": "off",
   "scm.diffDecorationsGutterVisibility": "hover",
   "scss.validate": false,
   "search.exclude": {
-    "**/node_modules": true,
     "**/bower_components": true,
-    "dist": true,
+    "**/node_modules": true,
+    "_build": true,
     "coverage": true,
-    "_build": true
+    "dist": true
   },
   "search.quickOpen.includeHistory": false,
-  "search.searchOnTypeDebouncePeriod": 500,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": [
+    "css",
+    "postcss",
+    "scss"
+  ],
+  "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 1,
-  "workbench.colorCustomizations": { "editor.selectionBackground": "#ddd8c7" },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#ddd8c7"
+  },
   "workbench.colorTheme": "Solarized Light+",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromCodeNavigation": true,
   "workbench.editor.focusRecentEditorAfterClose": false,
-  "workbench.editorAssociations": { "*.ipynb": "jupyter.notebook.ipynb" },
+  "workbench.editorAssociations": {
+    "*.png": "image-diff.image-with-diff"
+  },
   "workbench.sideBar.location": "left"
 }

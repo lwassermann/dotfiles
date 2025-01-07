@@ -46,3 +46,5 @@ Session.vim
 
 # Prettier configuration for files where that is nested and hidden from the editor configuration
 .prettierrc.json
+
+Procfile.local
