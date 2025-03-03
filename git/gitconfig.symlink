@@ -33,11 +33,39 @@
         status = auto
         branch = auto
 [apply]
-        whitespace = nowarn
+        whitespace = fix
 [pull]
         ff = only
         rebase = true
 [push]
         default = simple
+        autoSetupRemote = true
+        followTags = true
 [pager]
-	branch = false
+        branch = false
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
+[tag]
+        sort = version:refname
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+[commit]
+        verbose = true
+[rerere]
+        enabled = true
+        autoupdate = true
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+[merge]
+        conflictstyle = zdiff3
