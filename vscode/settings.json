@@ -76,7 +76,6 @@
   "git.confirmSync": false,
   "git.path": "/usr/local/bin/git",
   "git.suggestSmartCommit": false,
-  "github.copilot.editor.enableAutoCompletions": true,
   "image-diff.viewer.showDiffByDefault": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveshare.anonymousGuestApproval": "reject",

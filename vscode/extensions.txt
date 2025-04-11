@@ -1,12 +1,10 @@
-cssho.vscode-svgviewer
+alefragnani.project-manager
 dbaeumer.vscode-eslint
-EditorConfig.EditorConfig
-hediet.vscode-drawio
-jebbs.plantuml
+dheovani.svg-viewer
+editorconfig.editorconfig
 ms-azuretools.vscode-docker
 ms-vscode.sublime-keybindings
-rust-lang.rust
+ms-vsliveshare.vsliveshare
 ryanolsonx.solarized
 stylelint.vscode-stylelint
-Tyriar.sort-lines
-wix.vscode-import-cost
+tyriar.sort-lines
