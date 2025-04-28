@@ -44,8 +44,8 @@
       "    const defaultProps: Props = {${2}};",
       "    const props = { ...defaultProps, ...overrideProps };",
       "    return Object.assign(",
-      "      render(<${1:systemUnderTest} {...props} />),"
-      "      { user: userEvent.setup() }"
+      "      render(<${1:systemUnderTest} {...props} />),",
+      "      { user: userEvent.setup() }",
       "    );",
       "  }",
       "",
