@@ -8,7 +8,7 @@ link_configuration () {
 
   ln -sf "$(realpath ./settings.json)" "$target"
 
-  if [ -f "$target/snippets" ]
+  if [ -d "$target/snippets" ]
   then
     rm -r "$target/snippets"
   fi

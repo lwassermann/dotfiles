@@ -1,8 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
-tap 'homebrew/services'
-
 brew 'asdf'
 brew 'bat'
 brew 'coreutils'
@@ -23,7 +20,6 @@ brew 'tmux'
 brew 'wget'
 
 cask '1password'
-cask 'chromedriver'
 cask 'docker'
 cask 'drawio'
 cask 'firefox'
